@@ -60,8 +60,9 @@ function sendOrder() {
     const total = cart.reduce((sum, item) => sum + item.price, 0);
     message += `%0ATotal: ₡${total}`;
 
-    const phoneNumber = "50660337363"; // ← Tu número actualizado
+    const phoneNumber = "50660337363"; 
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${message}`;
     window.open(whatsappURL, "_blank");
 }
+
 
