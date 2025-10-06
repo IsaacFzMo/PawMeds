@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawMeds</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="title-slogan">
+                <h1>PawMeds</h1>
+                <p>Más que galletas: <br> Nutrición, Cuidado, y Diversión</p>
+            </div>
+            <nav>
+                    <a href="#" onclick="showPage('home-page')">Inicio</a>
+                    <a href="#" onclick="showPage('about-us-page')">Quienes Somos</a>
+                    <a href="#" onclick="showPage('mission-and-vission-page')">Nuestras Galletas</a>
+                    <a href="#" onclick="showPage('cart-page')">Carrito</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="content cart-page" id="cart-page">
+        <h2>Tu Carrito</h2>
+        <ul id="cart-items"></ul>
+        <p id="cart-total">Total: ₡0</p>
+        <button onclick="sendOrder()">Enviar por WhatsApp</button>
+    </div>
+
+    <div class="content home-page" id="home-page">
+        <p>¡Bienvenido a la página <br> informativa de PawMeds!</p>
+        <img src="lalala.png" class="home-image">
+    </div>
+
+    <div class="content about-us-page" id="about-us-page">
+        <img src="lalala.png" class="section-image2">
+        <h2>Quiénes Somos</h2> 
+        <p>Somo una empresa encargada de la elaboración de galletas medicinales con ingredientes funcionales que apoyan la salud de nuestros canes</p>
+        <div class="mission-and-vission-container">
+            <div class="mission">
+                <h2>Misión</h2>
+                <p>Desarrollar y ofrecer galletas medicinales de alta calidad. Cuidando la salud de sus mascotas.</p>
+            </div>
+            <div class="vission"> 
+                <h2>Visión</h2>
+                <p>Ser reconocidos como una marca lider en nutrución funcional y saludable. Promoviendo una vida prospera.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content mission-and-vission-page" id="mission-and-vission-page">
+        <div class="mission-and-vission-container">
+            <div class="mission">
+                <h2>VitalCrunch</h2>
+                <img src="Vital.jpg" class="section-image">
+                <p>Galleta de Zanahoria, <br>Avena y Canela</p>
+                <br>
+                <p>Aporte de vitamina A, la cúal fortalece la vista. Rico en fibra, ideal para la digestión. Propiedades antiinflamatorias</p>
+                <div class="product">
+                    <p class="product-price">₡1,500</p>
+                    <button class="add-to-cart-button" onclick="addToCart('VitalCrunch', 1500)">Agregar al carrito</button>
+                </div>
+            </div>
+            <div class="vission"> 
+                <h2>CalmaBite</h2>
+                <img src="Calma.jpg" class="section-image">
+                <p>Galleta de Platano y Mantequilla de Maní</p>
+                <br>
+                <p>Fuente de potasio y energía natural. Aporte de proteína. Efecto calmante para perros con ansiedad o hiperactividad.</p>
+                <div class="product">
+                    <p class="product-price">₡1,800</p>
+                    <button class="add-to-cart-button" onclick="addToCart('CalmaBite', 1800)">Agregar al carrito</button>
+                </div>
+            </div>
+             <div class="vission"> 
+                <h2>FlexiSnack</h2>
+                <img src="Flexi.jpg" class="section-image">
+                <p>Galleta de Calabaza, <br> Avena y Cúrcuma</p>
+                <br>
+                <p>Combate la indigestión. Rica en antioxidantes. Propiedades antiinflamatorias. Fuente de energía y fibra.</p>
+                <div class="product">
+                    <p class="product-price">₡1,600</p>
+                    <button class="add-to-cart-button" onclick="addToCart('FlexiSnack', 1600)">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+    <div class="contact-info">
+        <a href="mailto:paw.meds@outlook.com?subject=Consulta%20sobre%20PawMeds&body=Hola%20equipo%20PawMeds,%0A%0AQuisiera%20consultar%20sobre..." class="email-link">
+            <i class="fas fa-envelope"></i> paw.meds@outlook.com
+        </a>
+    <div class="social-links">
+        <a href="https://www.instagram.com/paw.meds?igsh=MXZ1cGI5eHc1Znd4eg%3D%3D&utm_source=qr" target="_blank">
+            <i class="fab fa-instagram"></i> Instagram
+        </a>
+    </div>
+    <p>&copy; PawMeds 2025. Todos los derechos reservados.</p>
+</footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

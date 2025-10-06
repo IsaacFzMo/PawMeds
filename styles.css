@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F5E9D3;
+    padding-bottom: 200px;
+}
+
+header {
+    background-color: #b35a27;
+    background-size: 1900px;
+    background-position: center;
+    color: 	#4CAF50;
+    text-align: center;
+    text-shadow: #ffffff;
+    padding: 10px 0px ;
+    position: relative;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    text-shadow: 
+     0.5px 0.5px 0 white,
+    -0.5px 0.5px 0 white,
+     0.5px -0.5px 0 white,
+    -0.5px -0.5px 0 white;
+}
+
+header p {
+    color: white;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.title-slogan {
+    text-align: left;
+}
+
+.title-slogan h1 {
+    margin: 0;
+    font-size: 50px;
+    margin-right: 500px;
+}
+
+.title-slogan p {
+    margin: 0;
+    font-size: 0.9em;
+    line-height: 1.2;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    z-index: 1000;
+    position: static;
+    top: 20px;
+    right: 50px;
+
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background-color: 	#4CAF50;
+    font-size: 0.9em;
+
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+nav a:hover {
+    background-color: 	#A5D6A7;
+    color: #ffffff;
+
+    transform: scale(1.05);
+}
+
+.home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 160px);
+    padding: 20px;
+    font-family: 'Fredoka', serif ;
+    text-align: center;
+}
+
+
+.home-page p {
+    text-align: center;
+    font-size: 5vw; 
+    background-color: 	#b35a27; 
+    color: 	#ffffff; 
+    border-radius: 50px; 
+    padding: 30px; 
+    display: inline-block; 
+    max-width: 90%; 
+    height: auto; 
+    font-family: 'Fredoka', serif;
+    margin: 40px auto;
+    box-sizing: border-box;
+}
+
+.content {
+    padding: 20px;
+}
+
+.section-image {
+    padding-left: 22.5%;
+    text-align: center;
+    align-items: center;
+    margin-right: 20px;
+    max-width: 55%; 
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    overflow: hidden;
+}
+
+.section-image2 {
+    margin-top: 250px;
+    text-align: center;
+    align-items: center;
+    float: left;
+    margin-right: 20px;
+    width: 400px;
+   
+}
+
+img {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.1);
+}
+
+
+.about-us-page h2,
+.mission-and-vission-page h2,
+.objectives-page h2 {
+    text-align: center;
+    width: 100%;
+    font-size: 50px;
+    color:	#8B5E3C;
+    font-family: 'Fredoka', serif;
+
+}
+
+.about-us-page p,
+.mission-and-vission-page p,
+.objectives-page p {
+    font-size: 45px;
+    color: 	#8B5E3C;
+    font-family: 'Fredoka', serif;
+}
+
+
+footer {
+    background-color: 	#d2c5ad;
+    color: #000000;
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    font-size: 0.9em;
+}
+
+.contact-info {
+    margin-bottom: 10px;
+}
+
+.social-links {
+    margin-bottom: 10px;
+}
+
+.social-links a {
+
+    color: #833AB4;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+   transform: scale(1.05);
+}
+
+.about-us-page {
+    display: none;
+}
+.mission-page {
+    display: none;
+}
+.vision-page {
+    display: none;
+}
+.objectives-page {
+    display: none;
+}
+.contact-page {
+    display: none;
+}
+
+h1, h2 {
+    font-family: 'Fredoka', serif;
+}
+
+p {
+    font-family: 'Fredoka';
+}
+
+.mission-and-vission-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+}
+
+.mission, .vission {
+    flex: 1; 
+    max-width: 45%; 
+}
+
+.mission h2, .vission h2 {
+    font-size: 50px;
+    color: 	#8B5E3C;
+    font-family: 'Fredoka', serif;
+    margin-bottom: 10px; 
+}
+
+.mission p, .vission p {
+    font-size: 45px;
+    color: 	#8B5E3C;
+    font-family: 'Fredoka', serif;
+}
+
+.mission-and-vission-container p {
+    text-align: center;
+}
+
+.home-image {
+    display: block;
+    margin: 30px auto;
+    max-width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.content {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    display: none;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+}
+
+.email-link {
+    color: #4CAF50;
+    font-size: 18px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.email-link:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.cart-page h2 {
+    font-size: 40px;
+    color: #8B5E3C;
+}
+
+#cart-items {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+    color: #8B5E3C;
+}
+
+#cart-total {
+    #cart-total {
+    font-size: 28px;
+    color: #8B5E3C;
+    font-family: 'Fredoka', serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: #A5D6A7;
+     }
+
+.product {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.product-price {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-family: 'Fredoka', serif;
+}
+
+.add-to-cart-button {
+    display: inline-block;
+    margin: 0 auto;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #A5D6A7;
+    transform: scale(1.05);
+}
